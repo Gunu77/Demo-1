@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<title>Add Training Details</title>
+</head>
+<body bgcolor="blue">
+
+<script type="text/javascript">
+
+function isEmpty(){
+	var x=document.training.id.value;
+	var y=document.training.name.value;
+	var z=document.training.start.value;
+	var a=document.training.end.value;
+	var b=document.training.mode.value;
+	
+	
+	if(x==0 || y==0){
+		alert("Please Enter all the Fields \n");
+		return false;
+	}
+	
+	
+	
+	else{
+		return true;
+	}
+}
+
+</script>
+<h1 align="center"><b>Add Training Details</b></h1>
+<br/>
+<br/>
+<h2 align="center"><b>Please Enter the Training Details</b></h2>
+<br/>
+<br/>
+<form name="training" action="addresult" method="get">
+
+Enter Training ID:<input type="text" name="id" value="">
+<br/>
+<br/>
+Enter Training Name:<input type="text" name="name" value="">
+<br/>
+<br/>
+Enter Training Start Date:<input type="text" name="start" value="">
+<br/>
+<br/>
+Enter Training End Date:<input type="text" name="end" value="">
+<br/>
+<br/>
+Enter Training Mode:<input type="text" name="mode" value="">
+<br/>
+<br/>
+<input type="submit" name="submit" value="Submit Details" onClick="return isEmpty();">
+
+</form>
+</body>
+</html>

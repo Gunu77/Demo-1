@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<title>Assignment 9</title>
+</head>
+<body bgcolor="blue">
+
+<script type="text/javascript">
+
+function isEmpty(){
+	var x=document.login.user.value;
+	var y=document.login.pass.value;
+	
+	
+	
+	if(x==0 || y==0){
+		alert("Please Enter Username and Password\n");
+		return false;
+	}
+	
+	
+	
+	else{
+		return true;
+	}
+}
+
+</script>
+<h1 align="center"><b>Assignment 9</b></h1>
+<br/>
+<br/>
+<h2 align="center"><b>Please Enter your Login Details</b></h2>
+<br/>
+<br/>
+<form name="login" action="result" method="post">
+
+Enter your Username:<input type="text" name="user" value="">
+<br/>
+<br/>
+Enter your Password:<input type="password" name="pass" value="">
+<br/>
+<br/>
+<input type="submit" name="submit" value="Login" onClick="return isEmpty();">
+
+</form>
+</body>
+</html>
